@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-colmena-oscuro text-white min-h-screen;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-miel-500 hover:bg-miel-400 text-colmena-oscuro font-semibold py-3 px-6 rounded-xl
+           transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-lg
+           hover:shadow-miel-500/30 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-colmena-medio hover:bg-colmena-oscuro text-miel-400 font-medium py-2 px-5 rounded-lg
+           border border-miel-500/30 hover:border-miel-500 transition-all duration-300
+           transform hover:scale-105;
+  }
+
+  .card {
+    @apply bg-colmena-medio/80 backdrop-blur-sm rounded-2xl border border-miel-500/20
+           shadow-lg hover:shadow-xl hover:shadow-miel-500/10 hover:border-miel-500/40
+           transition-all duration-300 transform hover:-translate-y-1;
+  }
+
+  .input-field {
+    @apply w-full bg-colmena-oscuro/50 border border-miel-500/30 rounded-lg px-4 py-2.5
+           text-white placeholder-gray-500 focus:outline-none focus:border-miel-500
+           focus:ring-2 focus:ring-miel-500/20 transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-miel-400 to-miel-600;
+  }
+}
