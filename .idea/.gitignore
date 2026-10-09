@@ -8,3 +8,17 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# Dependencias de Angular
+frontend/node_modules/
+
+# Caché y compilaciones de Angular
+frontend/.angular/
+frontend/dist/
+
+# Compilaciones de Java / Maven
+backend/target/
+
+# Archivos con secretos
+.env
+.env.*
+!.env.example
